@@ -1,7 +1,7 @@
 ## <p align='center'>Hi👋 I'm Chayathorn Charoenratwutikal</p>
 
 - 📚 currently studying at [Suankularb Wittayalai](http://www.sk.ac.th/)
-- 🌱 learning about TypeScript / React / Angular / Python
+- 🌱 learning Full-stack development
 
 ---
 
