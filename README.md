@@ -3,7 +3,7 @@
 - 📚 currently studying at [Suankularb Wittayalai](http://www.mysk.school)
 - 🌱 learning Full-stack development
 
-[![My Skills](https://skills.thijs.gg/icons?i=git,docker,py,c,figma,html,ts,js,nodejs,react,nextjs,nuxtjs,lua,vim)](https://skills.thijs.gg)
+[![My Skills](https://skills.thijs.gg/icons?i=git,docker,py,c,figma,html,ts,js,nodejs,react,nextjs,nuxtjs,vim)](https://skills.thijs.gg)
 
 ---
 
