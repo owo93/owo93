@@ -11,7 +11,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=owo93&show_icons=true&theme=dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=owo93&show_icons=true&theme=dark">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=owo93&show_icons=true&theme=light">
   <img alt="placeholder." src="https://github-readme-stats.vercel.app/api?username=owo93&show_icons=true&theme=light">
 </picture>
 
