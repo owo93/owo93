@@ -3,7 +3,17 @@
 - 📚 currently studying at [Suankularb Wittayalai](http://www.mysk.school)
 - 🌱 learning Full-stack development
 
-[![My Skills](https://skills.thijs.gg/icons?i=git,docker,py,c,figma,html,ts,js,nodejs,react,nextjs,nuxtjs,vim)](https://skills.thijs.gg)
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=linux,git,docker,arduino,raspberrypi,py,cpp,gcp,figma,ts,js,nodejs,nextjs,nuxtjs,neovim" />
+  </a>
+</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=owo93&show_icons=true&theme=dark">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=owo93&show_icons=true&theme=dark">
+  <img alt="placeholder." src="https://github-readme-stats.vercel.app/api?username=owo93&show_icons=true&theme=light">
+</picture>
 
 ---
 
