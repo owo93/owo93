@@ -1,8 +1,5 @@
 ## <p align='center'>Hi👋 I'm Chayathorn Charoenratwutikal</p>
 
-- 📚 currently studying at [Suankularb Wittayalai](http://www.mysk.school)
-- 🌱 learning Full-stack development
-
 <p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=linux,git,docker,arduino,raspberrypi,py,cpp,gcp,figma,ts,js,nodejs,nextjs,nuxtjs,neovim" />
