@@ -14,4 +14,4 @@
 
 ---
 
-my dotfiles (poorly organized) 👉 [github.com/owo93/dotfiles](https://github.com/owo93/dotfiles)
+my dotfiles (poorly maintained) 👉 [github.com/owo93/dotfiles](https://github.com/owo93/dotfiles)
