@@ -7,7 +7,7 @@
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=owo93&show_icons=true&bg=00000000&theme=tokyonight">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=owo93&show_icons=true&theme=tokyonight&bg_color=00000000">
   <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=owo93&show_icons=true&theme=light">
   <img alt="placeholder." src="https://github-readme-stats.vercel.app/api?username=owo93&show_icons=true&theme=light">
 </picture>
