@@ -1,8 +1,8 @@
-## <p align='center'>Hi👋 I'm Chayathorn Charoenratwutikal</p>
+## <p align='center'>Hi👋 I'm Ike</p>
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=neovim,linux,git,docker,arduino,raspberrypi,py,cpp,figma,ts,nodejs" />
+    <img src="https://skillicons.dev/icons?i=vim,arch,docker,arduino,raspberrypi,py,cpp,ts" />
   </a>
 </p>
 
@@ -14,4 +14,4 @@
 
 ---
 
-my dotfiles (poorly maintained) 👉 [github.com/owo93/dotfiles](https://github.com/owo93/dotfiles)
+[dotfiles](https://github.com/owo93/dotfiles)
