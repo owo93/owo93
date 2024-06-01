@@ -1,5 +1,6 @@
 ### greetings!
-A high school student interested in open-source and exploring new technologies. Check out my skills below 👇
+- 🎒 High school student at [suankularb-wittiyalai](http://www.sk.ac.th/)
+- 📝 Learning general programming, web-development, embedded programming
 
 <p align="center">
   <a href="https://skillicons.dev">
