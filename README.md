@@ -1,5 +1,5 @@
 ### greetings!
-I'm a high school student interested in open-source and exploring new technologies. Check out my skills below 👇
+A high school student interested in open-source and exploring new technologies. Check out my skills below 👇
 
 <p align="center">
   <a href="https://skillicons.dev">
