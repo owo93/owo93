@@ -1,6 +1,7 @@
 ### greetings!
-- 🎒 High school student at [suankularb-wittiyalai](http://www.sk.ac.th/)
-- 📝 Learning general programming, web-development, embedded programming
+- 🎒 **Study** → High school student at [suankularb-wittiyalai](http://www.sk.ac.th/)
+- 🔭 **Team** → Backend developer at [SKISO](https://github.com/suankularb-wittayalai-school)
+- 📝 **Learning** →  software-development, web-development, embedded
 
 <p align="center">
   <a href="https://skillicons.dev">
