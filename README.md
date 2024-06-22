@@ -16,5 +16,3 @@
     <img alt="placeholder." src="https://github-readme-stats.vercel.app/api?username=owo93&show_icons=true&theme=light">
   </picture>
 </p>
-
- ![](https://komarev.com/ghpvc/?username=owo93)
