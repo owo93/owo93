@@ -51,6 +51,8 @@
 			</a>
 			<a href="https://nixwebr.ing/next/owo93" target="_blank">&RightArrow;</a>
 		</div>
-		<p class="text-xs opacity-60">© {new Date().getFullYear()} Chayathorn Charoenratwutikal</p>
+		<p class="text-xs opacity-60">
+			owofolio &copy; {new Date().getFullYear()} Chayathorn Charoenratwutikal
+		</p>
 	</div>
 </div>
