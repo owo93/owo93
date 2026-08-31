@@ -16,5 +16,11 @@
 <style>
 	:global(body) {
 		color: oklch(0.4 0.2 290);
+		background-color: oklch(0.88 0.05 290);
+
+		@media (prefers-color-scheme: dark) {
+			color: oklch(0.88 0.2 290);
+			background-color: oklch(0.12 0.01 290);
+		}
 	}
 </style>
