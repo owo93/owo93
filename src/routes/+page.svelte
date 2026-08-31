@@ -42,15 +42,15 @@
 	<div class="flex flex-col items-center gap-2">
 		<!-- webrirng -->
 		<div class="flex flex-row items-center gap-2">
-			<a href="https://nixwebr.ing/prev/owo93" target="_blank">&LeftArrow;</a>
-			<a href="https://nixwebr.ing" target="_blank">
+			<a href="https://nixwebr.ing/prev/owo93">&LeftArrow;</a>
+			<a href="https://nixwebr.ing">
 				<img
 					src="https://nixwebr.ing/nix-webring.svg"
 					class="w-4 opacity-70"
 					alt="nix webring icon"
 				/>
 			</a>
-			<a href="https://nixwebr.ing/next/owo93" target="_blank">&RightArrow;</a>
+			<a href="https://nixwebr.ing/next/owo93">&RightArrow;</a>
 		</div>
 		<p class="text-xs opacity-60">
 			owofolio &copy; {new Date().getFullYear()} Chayathorn Charoenratwutikal
