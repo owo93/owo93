@@ -2,15 +2,10 @@
 	import Card from '$lib/components/Card.svelte';
 	import Contacts from '$lib/components/Contacts.svelte';
 	import { resolve } from '$app/paths';
+	import type { PageData } from './$types';
 
-	let contacts: { name: string; href: string }[] = [
-		{ name: 'GitHub', href: 'https://github.com/owo93' },
-		{ name: 'Codeberg', href: 'https://codeberg.org/owo93' },
-		{ name: 'Instagram', href: 'https://www.instagram.com/o_o.493' },
-		{ name: 'LinkedIn', href: 'https://www.linkedin.com/in/owo93' }
-	];
+	let { data }: { data: PageData } = $props();
 
-	let email: string = 'mailto:hi@chythrn.cc';
 	const commitHash = process.env.COMMIT_HASH || 'unknown';
 </script>
 
@@ -25,10 +20,10 @@
 				</ul>
 			</Card>
 			<Card>
-				<Contacts {contacts} />
+				<Contacts contacts={data.contacts} />
 			</Card>
 			<Card>
-				<a href={email}>email</a>
+				<a href="mailto:{data.email}">email</a>
 				<a href={resolve('/resume')} download="resume.pdf">my resume</a>
 			</Card>
 			<Card span="2">
@@ -54,7 +49,8 @@
 			<a href="https://nixwebr.ing/next/owo93">&RightArrow;</a>
 		</div>
 		<p class="text-xs opacity-60">
-			{commitHash} owofolio &copy; {new Date().getFullYear()} Chayathorn Charoenratwutikal
+			<span class="font-mono hover:underline">{commitHash}</span> owofolio &copy; {new Date().getFullYear()}
+			Chayathorn Charoenratwutikal
 		</p>
 	</div>
 </div>
