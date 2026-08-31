@@ -25,3 +25,4 @@ vite.config.ts.timestamp-*
 # Deno
 deno.json*
 deno.lock
+static/

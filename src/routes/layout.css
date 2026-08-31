@@ -1,1 +1,5 @@
 @import 'tailwindcss';
+
+@theme {
+	--font-mono: 'Commit Mono', ui-monospace, monospace;
+}
