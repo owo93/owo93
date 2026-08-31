@@ -9,7 +9,7 @@
 		{ name: 'LinkedIn', href: 'https://example.com' }
 	];
 
-	let email: string = 'mailto://hi@chythrn.cc';
+	let email: string = 'mailto:hi@chythrn.cc';
 </script>
 
 <div class="flex h-svh flex-col p-4 sm:p-6">
