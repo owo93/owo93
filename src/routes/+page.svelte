@@ -4,9 +4,10 @@
 	import { resolve } from '$app/paths';
 
 	let contacts: { name: string; href: string }[] = [
-		{ name: 'GitHub', href: 'https://example.com' },
-		{ name: 'Instagram', href: 'https://example.com' },
-		{ name: 'LinkedIn', href: 'https://example.com' }
+		{ name: 'GitHub', href: 'https://github.com/owo93' },
+		{ name: 'Codeberg', href: 'https://codeberg.org/owo93' },
+		{ name: 'Instagram', href: 'https://www.instagram.com/o_o.493' },
+		{ name: 'LinkedIn', href: 'https://www.linkedin.com/in/owo93' }
 	];
 
 	let email: string = 'mailto:hi@chythrn.cc';
