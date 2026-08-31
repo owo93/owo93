@@ -11,6 +11,7 @@
 	];
 
 	let email: string = 'mailto:hi@chythrn.cc';
+	const commitHash = process.env.COMMIT_HASH || 'unknown';
 </script>
 
 <div class="flex h-svh flex-col p-4 sm:p-6">
@@ -53,7 +54,7 @@
 			<a href="https://nixwebr.ing/next/owo93">&RightArrow;</a>
 		</div>
 		<p class="text-xs opacity-60">
-			owofolio &copy; {new Date().getFullYear()} Chayathorn Charoenratwutikal
+			{commitHash} owofolio &copy; {new Date().getFullYear()} Chayathorn Charoenratwutikal
 		</p>
 	</div>
 </div>
