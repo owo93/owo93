@@ -7,11 +7,18 @@
 	let { data }: { data: PageData } = $props();
 
 	const commitHash = process.env.COMMIT_HASH || 'unknown';
+
+	const bioItems = $state([
+		{ id: 1, text: 'high-schooler at Suankularb Wittayalai School, bkk.' },
+		{ id: 2, text: 'mostly works on the backend w/ Rust' },
+		{ id: 3, text: 'trying to "fix" everything w/ nix.' }
+	]);
 </script>
 
 <div class="flex h-svh flex-col p-4 sm:p-6">
 	<div class="flex flex-1 items-center justify-center">
 		<div class="grid w-full max-w-2xl grid-cols-1 gap-3 sm:grid-cols-3 sm:grid-rows-2">
+			<!-- Profile -->
 			<Card span="2">
 				<h1 class="font-mono text-xl">Chayathorn<br /> Charoenratwutikal</h1>
 				<ul>
@@ -19,18 +26,24 @@
 					<li>Backend developer</li>
 				</ul>
 			</Card>
+
+			<!-- Contact info -->
 			<Card>
 				<Contacts contacts={data.contacts} />
 			</Card>
+
+			<!-- Resume -->
 			<Card>
 				<a href="mailto:{data.email}">email</a>
 				<a href={resolve('/resume')} download="resume.pdf">my resume</a>
 			</Card>
+
+			<!-- Bio -->
 			<Card span="2">
 				<ul>
-					<li>&gt; high-schooler at Suankularb Wittayalai School, bkk.</li>
-					<li>&gt; mostly works on the backend w/ Rust</li>
-					<li>&gt; trying to "fix" everything w/ nix.</li>
+					{#each bioItems as item (item.id)}
+						<li>&gt; {item.text}</li>
+					{/each}
 				</ul>
 			</Card>
 		</div>
