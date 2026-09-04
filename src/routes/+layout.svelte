@@ -9,7 +9,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>owofolio</title>
+	<title>Chayathorn's Portfolio</title>
 	<link rel="preload" href={commitMonoWoff2} as="font" type="font/woff2" crossorigin="anonymous" />
 </svelte:head>
 {@render children()}

@@ -15,6 +15,10 @@
 	]);
 </script>
 
+<svelte:head>
+	<meta name="description" content={bioItems.map((i) => i.text).join(' // ')} />
+</svelte:head>
+
 <div class="flex h-svh flex-col p-4 sm:p-6">
 	<div class="flex flex-1 items-center justify-center">
 		<div class="grid w-full max-w-2xl grid-cols-1 gap-3 sm:grid-cols-3 sm:grid-rows-2">
