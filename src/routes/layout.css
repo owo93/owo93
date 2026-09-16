@@ -2,4 +2,20 @@
 
 @theme {
 	--font-mono: 'Commit Mono', ui-monospace, monospace;
+	--color-foreground: oklch(0.4 0.2 290);
+	--color-background: oklch(0.95 0.05 290);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-foreground: oklch(0.88 0.2 290);
+		--color-background: oklch(0.12 0.01 290);
+	}
+}
+
+@layer base {
+	body {
+		color: var(--color-foreground);
+		background-color: var(--color-background);
+	}
 }
