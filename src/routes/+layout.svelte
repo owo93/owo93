@@ -1,27 +1,30 @@
 <script lang="ts">
 	import '@fontsource/commit-mono';
 	import './layout.css';
-	import { onMount } from 'svelte';
 	import favicon from '$lib/assets/icon.ico';
 	import commitMonoWoff2 from '@fontsource/commit-mono/files/commit-mono-latin-400-normal.woff2';
 	import { Shader, Dither, FractalNoise } from 'shaders/svelte';
 
 	let { children } = $props();
 
-	let ditherColor = $state('oklch(0.4 0.2 290)');
-
-	onMount(() => {
+	let isDark = $state(false);
+	$effect(() => {
 		const media = window.matchMedia('(prefers-color-scheme: dark)');
-		const syncColor = () => {
-			ditherColor = getComputedStyle(document.documentElement)
-				.getPropertyValue('--color-foreground')
-				.trim();
+
+		const syncTheme = () => {
+			isDark = media.matches;
 		};
 
-		syncColor();
-		media.addEventListener('change', syncColor);
-		return () => media.removeEventListener('change', syncColor);
+		syncTheme();
+		media.addEventListener('change', syncTheme);
+		return () => media.removeEventListener('change', syncTheme);
 	});
+
+	let ditherColor = $derived(
+		isDark
+			? getComputedStyle(document.documentElement).getPropertyValue('--color-foreground').trim()
+			: 'oklch(0.5 0.2 75)'
+	);
 </script>
 
 <svelte:head>
