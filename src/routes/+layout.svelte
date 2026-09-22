@@ -1,8 +1,6 @@
 <script lang="ts">
 	import '@fontsource/commit-mono';
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.png';
-	import faviconInactive from '$lib/assets/favicon-unfocused.png';
 	import commitMonoWoff2 from '@fontsource/commit-mono/files/commit-mono-latin-400-normal.woff2';
 	import { Shader, Dither, FractalNoise } from 'shaders/svelte';
 
@@ -10,7 +8,7 @@
 
 	let isDark = $state(false);
 	let isTabFocused = $state(true);
-	let faviconHref = $derived(isTabFocused ? favicon : faviconInactive);
+	let faviconHref = $derived(isTabFocused ? '/favicon.ico' : '/favicon-unfocused.ico');
 
 	$effect(() => {
 		const syncFocus = () => {
@@ -41,7 +39,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={faviconHref} type="image/x-icon" />
+	<link rel="icon" href={faviconHref} type="image/png" />
 	<title>Chayathorn's Portfolio</title>
 	<link rel="preload" href={commitMonoWoff2} as="font" type="font/woff2" crossorigin="anonymous" />
 </svelte:head>
