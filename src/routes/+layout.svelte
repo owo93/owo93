@@ -1,16 +1,29 @@
 <script lang="ts">
 	import '@fontsource/commit-mono';
 	import './layout.css';
-	import favicon from '$lib/assets/icon.ico';
+	import favicon from '$lib/assets/favicon.png';
+	import faviconInactive from '$lib/assets/favicon-unfocused.png';
 	import commitMonoWoff2 from '@fontsource/commit-mono/files/commit-mono-latin-400-normal.woff2';
 	import { Shader, Dither, FractalNoise } from 'shaders/svelte';
 
 	let { children } = $props();
 
 	let isDark = $state(false);
+	let isTabFocused = $state(true);
+	let faviconHref = $derived(isTabFocused ? favicon : faviconInactive);
+
+	$effect(() => {
+		const syncFocus = () => {
+			isTabFocused = document.visibilityState === 'visible';
+		};
+
+		syncFocus();
+		document.addEventListener('visibilitychange', syncFocus);
+		return () => document.removeEventListener('visibilitychange', syncFocus);
+	});
+
 	$effect(() => {
 		const media = window.matchMedia('(prefers-color-scheme: dark)');
-
 		const syncTheme = () => {
 			isDark = media.matches;
 		};
@@ -28,7 +41,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<link rel="icon" href={faviconHref} type="image/x-icon" />
 	<title>Chayathorn's Portfolio</title>
 	<link rel="preload" href={commitMonoWoff2} as="font" type="font/woff2" crossorigin="anonymous" />
 </svelte:head>
@@ -37,7 +50,7 @@
 <!-- Background -->
 <div class="pointer-events-none fixed inset-0 -z-10">
 	<Shader class="h-full w-full">
-		<Dither pattern="bayer8" opacity={0.1} colorB={ditherColor}>
+		<Dither pattern="bayer8" opacity={0.12} colorB={ditherColor}>
 			<FractalNoise />
 		</Dither>
 	</Shader>

@@ -13,7 +13,8 @@
 	"kv_namespaces": [
 		{
 			"binding": "OWOFOLIO_KV",
-			"id": "e9db2e91da0649e28fe0a64fdb6e0b40"
+			"id": "e9db2e91da0649e28fe0a64fdb6e0b40",
+			"remote": false
 		}
 	]
 }
